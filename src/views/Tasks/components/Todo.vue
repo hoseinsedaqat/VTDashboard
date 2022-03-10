@@ -58,7 +58,7 @@ export default Vue.extend({
   data() {
     return {
       todo: "" as string,
-      forUpdate: null as any, 
+      forUpdate: null, 
     };
   },
   computed: {
@@ -86,7 +86,7 @@ export default Vue.extend({
       this.$store.dispatch("DELETE_TODO", idx);
     },
     // For Update Todo
-    updateTask(idx: number) {
+    updateTask(idx: any) {
       this.todo = this.fetchTasks[idx].todo;
       this.forUpdate = idx;
     },
