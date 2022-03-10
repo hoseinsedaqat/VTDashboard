@@ -1,0 +1,56 @@
+$body-backgroundColor: #1e1e2f;
+
+$body-color: #fff;
+
+$card-color: #27293d;
+
+.chartColor1{
+    color: #e14eca !important;
+}
+
+.chartColor2{
+    color: #1d8cf8 !important;
+}
+
+.chartColor3{
+    color: #00f2c3 !important;
+}
+
+.bg {
+    &-cardOne {
+        background-color: #ff8d72;
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    &-cardTwo {
+        background-color: #e14eca;
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    &-cardThree {
+        background-color: #1d8cf8;;
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    &-cardFour {
+        background-color: tomato;;
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}

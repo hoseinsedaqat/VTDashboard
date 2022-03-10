@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap");
+@import "./Colors/Colors.scss";
+@import "./Display/Display.scss";
+@import "./Utils/Utils.scss";
+
+body {
+    background-color: $body-backgroundColor;
+    color: $body-color;
+    font-family: $font-family;
+}
+
+
+// Header
+
+#header {
+    @extend %flex-display;
+    main {
+        margin: 1rem 5rem;
+        &:nth-child(2) {
+            display: $flex-display;
+        }
+    }
+}
+
+// Side Bar
+
+#sideBar {
+    display: $flex-display;
+    .fixedPosition {
+        position: $fixed !important;
+        display: $d-block !important;
+        z-index: 1;
+    }
+    .sidebar-title {
+        @extend %flex-display-1;
+    }
+    aside {
+        width: 230px;
+        background: linear-gradient(0deg, #389466, #42b883);
+        height: 100vh;
+        padding: 1rem;
+        border-radius: 5px;
+        @extend %flex-display-2;
+        .title {
+            border-bottom: 1px solid $body-color;
+            padding: 0.7rem 0;
+        }
+    }
+}
+
+// Main Content
+
+#contents {
+    margin: 0 0 0 15rem;
+    .mainContent {
+        .cardStyle {
+            background-color: $card-color;
+            padding: 1rem;
+        }
+
+        .input-style {
+            border: 1px solid #2b3553;
+            border-radius: 5px;
+            padding: 10px 18px 10px 18px;
+            transition: all 0.5s ease;
+            &:focus {
+                outline: none;
+                border-color: #e14eca;
+            }
+        }
+
+        .btn-user {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            align-self: center;
+            height: 2.375rem;
+            min-width: 2.375rem;
+            width: 2.375rem;
+            border-radius: 50%;
+            background-color: #344675;
+            transition: all 0.5s ease-in;
+            :hover {
+                min-width: 5rem;
+                transform: translate(3px, 3px);
+            }
+        }
+    }
+}
+
+@media (max-width: 678px) {
+    #sideBar {
+        display: none;
+    }
+    #contents {
+        margin: 0 0 0 0;
+        .mainContent {
+            margin: 3rem 0 0 0 !important;
+            .form {
+                flex-direction: column;
+                width: 100%;
+                div{
+                    margin: 0.5rem 0;
+                    label{
+                        margin: 0.2rem 0;
+                    }
+                }
+            }
+        }
+    }
+    .mobile-menu {
+        background: linear-gradient(0deg, #389466, #42b883) !important;
+        display: block !important;
+        z-index: 10 !important;
+    }
+}

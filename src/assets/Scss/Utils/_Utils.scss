@@ -1,0 +1,160 @@
+$font-family:"Poppins", sans-serif;
+
+.mx{
+    &-1{
+        margin: 0 0.5rem;
+    }
+    &-2{
+        margin: 0 0.7rem;
+    }
+}
+
+
+.ml{
+    &-1{
+        margin:0 0 0 1rem;
+    }
+    &-2{
+        margin:0 0 0 2rem;
+    }
+    &-3{
+        margin:0 0 0 3rem;
+    }
+    &-4{
+        margin:0 0 0 4rem;
+    }
+    &-5{
+        margin:0 0 0 5rem;
+    }
+}
+
+.my{
+    &-1{
+        margin: 1rem 0;
+    }
+}
+
+.mt{
+    &-1{
+        margin: 0.5rem 0 0 0;
+    }
+    &-2{
+        margin: 1rem 0 0 0;
+    }
+}
+
+
+ul{
+    list-style: none;
+    li{
+        display: flex;
+        margin: 2.7rem 0;
+    }
+}
+
+.cursor__pointer{
+    cursor: pointer;
+}
+
+.cursor__disable{
+    cursor: not-allowed;
+}
+
+.text-center {
+    text-align: left;
+}
+
+.text-align-center{
+    text-align: center;
+}
+
+.white{
+    color: #fff !important;
+}
+
+tbody {
+    tr:hover {
+       background-color: transparent !important;
+    }
+ }
+
+ .d-flex{
+     display: flex;
+ }
+
+ .d-block{
+     display: block !important;
+ }
+
+ .flex-column{
+     flex-direction: column;
+ }
+
+ .align-center{
+     align-items: center;
+ }
+
+ .justify-content-between{
+     justify-content: space-between;
+ }
+
+ .justify-content-center{
+     justify-content: center;
+ }
+
+
+.font{
+    // size
+    &-size1{
+        font-size: 15px !important;
+    }
+    &-small{
+        font-size: 12px !important;
+    }
+    &-muted{
+        color: #e2e2e2 !important;
+    }
+}
+
+.width{
+    &-100{
+        width: 100%;
+    }
+}
+
+.btn{
+    padding: 1rem 2rem;
+    background: #e14eca;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    &:hover{
+        box-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+        transform: translate(-2px,-2px);
+    }
+    &:active{
+        box-shadow: none;
+        transform: translate(0px,0px);
+    }
+}
+
+
+.done-task{
+    text-decoration: line-through !important;
+}
+
+a {
+    text-decoration:none !important;
+    color: #fff;
+}
+
+.bb-1{
+    border-bottom: 1px solid #fff;
+    padding: 1rem 0;
+}
+
+@media(max-width:678px){
+    .btn{
+        width: 100% !important;
+    }
+}
