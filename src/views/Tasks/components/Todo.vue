@@ -86,10 +86,10 @@ export default Vue.extend({
       this.$store.dispatch("DELETE_TODO", idx);
     },
     // For Update Todo
-    // updateTask(idx: any) {
-    //   this.todo = this.fetchTasks[idx].todo;
-    //   this.forUpdate = idx;
-    // },
+    updateTask(idx: any) {
+      this.todo = this.fetchTasks[idx].todo;
+      this.forUpdate = idx;
+    },
     // addTask() {
     //   if (this.forUpdate !== null) {
     //     this.tasks[this.forUpdate] = this.task;
