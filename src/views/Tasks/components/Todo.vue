@@ -58,7 +58,7 @@ export default Vue.extend({
   data() {
     return {
       todo: "" as string,
-      forUpdate: null as any,
+      forUpdate: null as any, 
     };
   },
   computed: {
