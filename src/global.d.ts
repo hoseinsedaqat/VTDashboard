@@ -1,4 +1,4 @@
-// Boom TS Support Images
+// Boom TS Support Images and if Module don't Support type Just bring in to Global for remove Error type and work Fine
 
 declare module "*.jpg" {
 
