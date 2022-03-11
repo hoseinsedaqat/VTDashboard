@@ -1,9 +1,11 @@
 $font-family:"Poppins", sans-serif;
 
 .mx{
+
     &-1{
         margin: 0 0.5rem;
     }
+
     &-2{
         margin: 0 0.7rem;
     }
@@ -11,41 +13,52 @@ $font-family:"Poppins", sans-serif;
 
 
 .ml{
+
     &-1{
         margin:0 0 0 1rem;
     }
+
     &-2{
         margin:0 0 0 2rem;
     }
+
     &-3{
         margin:0 0 0 3rem;
     }
+
     &-4{
         margin:0 0 0 4rem;
     }
+
     &-5{
         margin:0 0 0 5rem;
     }
 }
 
 .my{
+
     &-1{
         margin: 1rem 0;
     }
 }
 
 .mt{
+
     &-1{
         margin: 0.5rem 0 0 0;
     }
+
     &-2{
         margin: 1rem 0 0 0;
     }
+
 }
 
 
 ul{
+
     list-style: none;
+
     li{
         display: flex;
         margin: 2.7rem 0;
@@ -108,9 +121,11 @@ tbody {
     &-size1{
         font-size: 15px !important;
     }
+
     &-small{
         font-size: 12px !important;
     }
+    
     &-muted{
         color: #e2e2e2 !important;
     }
