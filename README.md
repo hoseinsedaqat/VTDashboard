@@ -1,4 +1,4 @@
-# adminpanel02
+# VTDashboard
 
 ## Project setup
 ```

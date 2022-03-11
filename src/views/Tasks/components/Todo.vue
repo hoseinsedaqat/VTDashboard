@@ -4,11 +4,6 @@
     <div class="form-group">
       <input type="text" class="input-style white width-100 my-1" v-model="todo" />
       <button class="white my-1 btn" @click="addTask()">Add Task</button>
-      <!-- <ul v-for="(t, i) in tasks" :key="(t, i)">
-                    <li class="white">{{ t }}</li>
-                    <li @click="removeIt(i)" class="white">Remove It</li>
-                    <li @click="updateIt(i)" class="white">Update It</li>
-            </ul> -->
       <v-simple-table class="cardStyle white" v-if="fetchTasks.length !== 0">
         <template class="white">
           <thead>
@@ -58,7 +53,7 @@ export default Vue.extend({
   data() {
     return {
       todo: "" as string,
-      forUpdate: null, 
+      forUpdate: null,
     };
   },
   computed: {
@@ -70,9 +65,7 @@ export default Vue.extend({
     addTask() {
       if (this.forUpdate !== null) {
         this.$toast.info("Update Task Successfully");
-        this.$store.dispatch('UPDATE_TODO',{id:this.forUpdate,newTask:this.todo})
-        // this.fetchTasks[this.forUpdate].todo = this.todo;
-        // localStorage.setItem("adminTask",JSON.stringify({ id: uuidv4(), todo: this.todo }));
+        this.$store.dispatch("UPDATE_TODO", { id: this.forUpdate, newTask: this.todo });
         this.forUpdate = null;
       } else {
         this.$toast.success("Add Task Successfully");
