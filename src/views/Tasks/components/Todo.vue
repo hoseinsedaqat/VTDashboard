@@ -90,22 +90,6 @@ export default Vue.extend({
       this.todo = this.fetchTasks[idx].todo;
       this.forUpdate = idx;
     },
-    // addTask() {
-    //   if (this.forUpdate !== null) {
-    //     this.tasks[this.forUpdate] = this.task;
-    //     this.forUpdate = null;
-    //   } else {
-    //     this.tasks.push(this.task);
-    //   }
-    //   this.task = "";
-    // },
-    // removeIt(i: any) {
-    //   this.tasks.splice(i, 1);
-    // },
-    // updateIt(i: any) {
-    //   this.task = this.tasks[i];
-    //   this.forUpdate = i;
-    // },
   },
   mounted() {
     this.REMAIN_TASK;
